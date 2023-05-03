@@ -1,4 +1,3 @@
 # git-test
-# test tes ttes
-bla vla vlflf
-git test
+# test with jes
+A Jest and npm labb session
