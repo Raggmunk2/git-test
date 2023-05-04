@@ -44,6 +44,6 @@ describe('Clicking "Poppa stacken!"', () => {
     });
     test('The stack should be empty in the beginning', async () => {
         let stack = await driver.findElement(By.id('top_of_stack')).getText();
-        expect(stack).toEqual("Apelsin");
+        expect(stack).toEqual("Bananer");
     });
 });
