@@ -32,3 +32,18 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+describe('Clicking "Poppa stacken!"', () => {
+    it('should pop the stack, open an alert and stack should be n/a', async () => {  
+        
+        let pop = await driver.findElement(By.id('pop'));
+        await pop.click();
+        let alert = await driver.switchTo().alert();
+        await alert.accept();
+
+    });
+    test('The stack should be empty in the beginning', async () => {
+        let stack = await driver.findElement(By.id('top_of_stack')).getText();
+        expect(stack).toEqual("Apelsin");
+    });
+});
